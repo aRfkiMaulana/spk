@@ -110,6 +110,11 @@
             }
             ?>
         </div>
+        <footer class="footer">
+            <div class="container">
+                <p>&copy; 2024 Sistem Pendukung Keputusan Bantuan Sosial.</p>
+            </div>
+        </footer>
     </div>
 </body>
 </html>

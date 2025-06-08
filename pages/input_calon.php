@@ -80,9 +80,9 @@
         </main>
 
         <!-- Footer -->
-        <footer class="text-center py-3 mt-4 border-top">
+        <footer class="footer">
             <div class="container">
-                <small>&copy; 2024 Sistem Bantuan Sosial. All rights reserved.</small>
+                <p>&copy; 2024 Sistem Pendukung Keputusan Bantuan Sosial.</p>
             </div>
         </footer>
     </div>
