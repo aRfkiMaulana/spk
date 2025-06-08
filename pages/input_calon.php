@@ -17,7 +17,7 @@
             <div class="container">
                 <div class="header-content">
                     <div class="logo-section">
-                        <i class="fas fa-chart-line logo-icon"></i>
+                        <i class="fas fa-users logo-icon"></i>
                         <div class="logo-text">
                             <h1 class="page-title">Input Calon Penerima</h1>
                             <p class="page-subtitle">Sistem Pendukung Keputusan Bantuan Sosial</p>
