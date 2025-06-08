@@ -1,5 +1,31 @@
 <?php include '../koneksi.php'; ?>
 
+<?php
+// Proses hapus kriteria
+if (isset($_GET['hapus'])) {
+    $id_hapus = intval($_GET['hapus']);
+    $query_hapus = "DELETE FROM kriteria WHERE id = $id_hapus";
+    $hapus_result = mysqli_query($koneksi, $query_hapus);
+    if ($hapus_result) {
+        echo '<div class="alert-success">
+                <i class="fas fa-check-circle"></i>
+                <div class="alert-content">
+                    <h4>Berhasil!</h4>
+                    <p>Kriteria berhasil dihapus.</p>
+                </div>
+              </div>';
+    } else {
+        echo '<div class="alert-error">
+                <i class="fas fa-exclamation-triangle"></i>
+                <div class="alert-content">
+                    <h4>Gagal!</h4>
+                    <p>Gagal menghapus kriteria: ' . mysqli_error($koneksi) . '</p>
+                </div>
+              </div>';
+    }
+}
+?>
+
 <!DOCTYPE html>
 <html lang="id">
 <head>
@@ -111,9 +137,6 @@
                                                    max="1" 
                                                    placeholder="0.25"
                                                    required>
-                                            <span class="input-addon">
-                                                <i class="fas fa-percent"></i>
-                                            </span>
                                         </div>
                                         <small class="form-hint">Nilai antara 0.01 - 1.00 (semakin tinggi semakin penting)</small>
                                         <div class="bobot-guide">
@@ -170,9 +193,9 @@
                                                     <button class="btn-edit" title="Edit">
                                                         <i class="fas fa-edit"></i>
                                                     </button>
-                                                    <button class="btn-delete" title="Hapus">
-                                                        <i class="fas fa-trash"></i>
-                                                    </button>
+                                                    <a href="?hapus='.$row['id'].'" class="btn-delete" title="Hapus" onclick="return confirm(\'Yakin ingin menghapus kriteria ini?\')">
+                                                        <i class="fas fa-trash-alt"></i>
+                                                    </a>
                                                 </div>
                                             </div>';
                                     }
