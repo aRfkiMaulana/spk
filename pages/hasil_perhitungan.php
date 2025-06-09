@@ -255,5 +255,30 @@
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+    <script>
+    document.querySelector('.pdf-btn').addEventListener('click', function() {
+        const table = document.querySelector('.results-table');
+        html2canvas(table).then(canvas => {
+            const imgData = canvas.toDataURL('image/png');
+            const pdf = new window.jspdf.jsPDF('p', 'mm', 'a4');
+            const pageWidth = pdf.internal.pageSize.getWidth();
+            const pageHeight = pdf.internal.pageSize.getHeight();
+            const imgProps = pdf.getImageProperties(imgData);
+            const pdfWidth = pageWidth - 20;
+            const pdfHeight = (imgProps.height * pdfWidth) / imgProps.width;
+            pdf.addImage(imgData, 'PNG', 10, 10, pdfWidth, pdfHeight);
+            pdf.save('hasil_perhitungan.pdf');
+        });
+    });
+
+    document.querySelector('.excel-btn').addEventListener('click', function() {
+        const table = document.querySelector('.results-table');
+        const wb = XLSX.utils.table_to_book(table, {sheet: "Hasil"});
+        XLSX.writeFile(wb, 'hasil_perhitungan.xlsx');
+    });
+    </script>
 </body>
 </html>

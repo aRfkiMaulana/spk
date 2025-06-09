@@ -122,12 +122,12 @@ body {
     border-left-color: #4facfe;
 }
 
-.kriteria-card {
-    border-left-color: #43e97b;
+.kriteria-card {    
+    border-left-color: #4facfe;
 }
 
 .ahp-card {
-    border-left-color: #fa709a;
+    border-left-color: #4facfe;
 }
 
 .card-icon {
@@ -441,7 +441,7 @@ body {
 }
 
 .print-btn {
-    background: linear-gradient(135deg, #667eea, #764ba2);
+    background: linear-gradient(135deg, #38a169, #2f855a);
 }
 
 .btn-export:hover {
