@@ -157,7 +157,6 @@ body {
 .alert-success {
     background: linear-gradient(135deg, #48bb78, #38a169);
     color: white;
-    border-left: 4px solid #22543d;
 }
 
 .alert-error {

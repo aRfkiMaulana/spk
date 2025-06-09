@@ -119,15 +119,15 @@ body {
 }
 
 .total-card {
-    border-left-color: #4facfe;
+    border-left-color: #ffff;
 }
 
 .kriteria-card {    
-    border-left-color: #4facfe;
+    border-left-color: #ffff;
 }
 
 .ahp-card {
-    border-left-color: #4facfe;
+    border-left-color: #ffff;
 }
 
 .card-icon {
@@ -143,15 +143,15 @@ body {
 }
 
 .total-card .card-icon {
-    background: linear-gradient(135deg, #4facfe, #00f2fe);
+    background: linear-gradient(135deg, #667eea, #764ba2);
 }
 
 .kriteria-card .card-icon {
-    background: linear-gradient(135deg, #43e97b, #38f9d7);
+    background: linear-gradient(135deg, #667eea, #764ba2);
 }
 
 .ahp-card .card-icon {
-    background: linear-gradient(135deg, #fa709a, #fee140);
+    background: linear-gradient(135deg, #667eea, #764ba2);
 }
 
 .card-number {
@@ -273,19 +273,19 @@ body {
 }
 
 .rank-gold {
-    background: linear-gradient(135deg, #ffd700, #ffed4e);
-    box-shadow: 0 4px 15px rgba(255, 215, 0, 0.4);
+    background: linear-gradient(135deg, #c0c0c0, #e5e5e5);
+    color : #ffda21
 }
 
 .rank-silver {
     background: linear-gradient(135deg, #c0c0c0, #e5e5e5);
     color: #666;
-    box-shadow: 0 4px 15px rgba(192, 192, 192, 0.4);
+    box-shadow: 0 6px 15px rgba(192, 192, 192, 0.4);
 }
 
 .rank-bronze {
-    background: linear-gradient(135deg, #cd7f32, #daa520);
-    box-shadow: 0 4px 15px rgba(205, 127, 50, 0.4);
+    background: linear-gradient(135deg, #c0c0c0, #e5e5e5);
+    color :#653f0b
 }
 
 .rank-normal {
@@ -361,22 +361,22 @@ body {
 }
 
 .status-prioritas {
-    background: linear-gradient(135deg, #48bb78, #38a169);
+    background: linear-gradient(135deg,#667eea, #764ba2);
     color: white;
 }
 
 .status-tinggi {
-    background: linear-gradient(135deg, #4299e1, #3182ce);
+    background: linear-gradient(135deg, #667eea, #764ba2);
     color: white;
 }
 
 .status-sedang {
-    background: linear-gradient(135deg, #ed8936, #dd6b20);
+    background: linear-gradient(135deg, #667eea, #764ba2);
     color: white;
 }
 
 .status-rendah {
-    background: linear-gradient(135deg, #a0aec0, #718096);
+    background: linear-gradient(135deg, #667eea, #764ba2);
     color: white;
 }
 
@@ -393,7 +393,6 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-left: 4px solid #667eea;
 }
 
 .export-info h3 {
@@ -437,11 +436,11 @@ body {
 }
 
 .excel-btn {
-    background: linear-gradient(135deg, #38a169, #2f855a);
+    background: linear-gradient(135deg, #e53e3e, #c53030);
 }
 
 .print-btn {
-    background: linear-gradient(135deg, #38a169, #2f855a);
+    background: linear-gradient(135deg, #e53e3e, #c53030);
 }
 
 .btn-export:hover {
